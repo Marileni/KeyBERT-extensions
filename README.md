@@ -42,19 +42,19 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
       Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
 
    
-      **Alternatively, you can run each approach directly:**
+      ### Alternatively, you can run each approach directly:
       
-      ### Domain Adaptation:
+       **Domain Adaptation:**
       ```bash
       python domain_adaptation/run_domain_adaptation.py
       ```
       
-      ### Multilingual (Greek):
+      **Multilingual (Greek):**
       ```bash
       python multilingual/run_multilingual.py
       ```
       
-      ### NER Preprocessing:
+      **NER Preprocessing:**
       ```bash
       python ner_preprocessing/run_ner_preprocessing.py
       ```

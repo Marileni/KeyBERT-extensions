@@ -22,44 +22,43 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
 
 2.  **Running via `main.py`**
 
-   We provide a single **entry point** in `main.py` that accepts a parameter specifying which approach to run:
+      We provide a single **entry point** in `main.py` that accepts a parameter specifying which approach to run:
+   
+      ```bash
+      python main.py --approach domain
+      ```
+      Runs the domain adaptation pipeline.
+      
+      ```bash
+      python main.py --approach multilingual
+      ```
+      Runs the multilingual (Greek) pipeline.
+      
+      ```bash
+      python main.py --approach ner
+      ```
+      Runs the NER-based preprocessing pipeline.
+      
+      Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
 
-   ```bash
-   python main.py --approach domain
-   ```
-   Runs the domain adaptation pipeline.
    
-   ```bash
-   python main.py --approach multilingual
-   ```
-   Runs the multilingual (Greek) pipeline.
-   
-   ```bash
-   python main.py --approach ner
-   ```
-   Runs the NER-based preprocessing pipeline.
-   
-   Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
-
-
-    **Or**
-   Alternatively, you can run each approach directly:
-   
-   ### Domain Adaptation:
-   ```bash
-   python domain_adaptation/run_domain_adaptation.py
-   ```
-   
-   ### Multilingual (Greek):
-   ```bash
-   python multilingual/run_multilingual.py
-   ```
-   
-   ### NER Preprocessing:
-   ```bash
-   python ner_preprocessing/run_ner_preprocessing.py
-   ```
-   Each script calls the relevant modules (`data_processing.py` and `model_training.py`) to complete its tasks.
+      **Alternatively, you can run each approach directly:**
+      
+      ### Domain Adaptation:
+      ```bash
+      python domain_adaptation/run_domain_adaptation.py
+      ```
+      
+      ### Multilingual (Greek):
+      ```bash
+      python multilingual/run_multilingual.py
+      ```
+      
+      ### NER Preprocessing:
+      ```bash
+      python ner_preprocessing/run_ner_preprocessing.py
+      ```
+      Each script calls the relevant modules (`data_processing.py` and `model_training.py`) to complete its tasks.
 
 
 ## Results

@@ -1,4 +1,4 @@
-**Deep Natural Language Processing Project**: Topic Modeling
+# Deep Natural Language Processing Project: Topic Modeling
 
 This repository focuses on **topic modeling** techniques that leverage BERT-based keyword extraction. We explore three main approaches:
 
@@ -43,6 +43,7 @@ Runs the NER-based preprocessing pipeline.
 
 Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
 
+
 ## Individual Scripts
 Alternatively, you can run each approach directly:
 
@@ -61,6 +62,7 @@ python multilingual/run_multilingual.py
 python ner_preprocessing/run_ner_preprocessing.py
 ```
 Each script calls the relevant modules (`data_processing.py` and `model_training.py`) to complete its tasks.
+
 
 ## Results
 During each run, the code may generate:

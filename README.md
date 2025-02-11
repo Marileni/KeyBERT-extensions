@@ -20,9 +20,7 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
    pip install -r requirements.txt
    
 
-## Usage
-
-### Running via `main.py`
+2.  **Running via `main.py`**
 
 We provide a single **entry point** in `main.py` that accepts a parameter specifying which approach to run:
 
@@ -44,7 +42,7 @@ Runs the NER-based preprocessing pipeline.
 Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
 
 
-## Individual Scripts
+## Or
 Alternatively, you can run each approach directly:
 
 ### Domain Adaptation:

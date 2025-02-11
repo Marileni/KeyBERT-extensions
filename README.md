@@ -46,17 +46,17 @@ Inside `main.py`, these commands map to the corresponding scripts in their respe
 ## Individual Scripts
 Alternatively, you can run each approach directly:
 
-## Domain Adaptation:
+### Domain Adaptation:
 ```bash
 python domain_adaptation/run_domain_adaptation.py
 ```
 
-## Multilingual (Greek):
+### Multilingual (Greek):
 ```bash
 python multilingual/run_multilingual.py
 ```
 
-## NER Preprocessing:
+### NER Preprocessing:
 ```bash
 python ner_preprocessing/run_ner_preprocessing.py
 ```

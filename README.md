@@ -41,10 +41,8 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
       ```
       Runs the NER-based preprocessing pipeline.
       
-      Inside `main.py`, these commands map to the corresponding scripts in their respective folders.
-
-   
-      ### Alternatively, you can run each approach directly:
+      Inside `main.py`, these commands map to the corresponding scripts in their respective folders.   
+      <!--  ### Alternatively, you can run each approach directly:
       
        **Domain Adaptation:**
       ```bash
@@ -60,7 +58,7 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
       ```bash
       python ner_preprocessing/run_ner_preprocessing.py
       ```
-      Each script calls the relevant modules (`data_processing.py` and `model_training.py`) to complete its tasks.
+      Each script calls the relevant modules (`data_processing.py` and `model_training.py`) to complete its tasks. -->
 
 
 ## Results

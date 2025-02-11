@@ -2,7 +2,7 @@ from .greek_translation import translate_into_greek
 from .data_processing import preprocess_data
 from .model_training import train_model
 
-def run_domain():
+def run_multilingual():
     # 1) Translation into Greek
     translated_data = translate_into_greek()
     # 2) Load and preprocess data

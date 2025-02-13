@@ -9,7 +9,7 @@ def main():
     args = parser.parse_args()
 
     if args.approach == 'domain':
-        run_domain()
+        run_domain_adaptation()
     elif args.approach == 'multilingual':
         run_multilingual()
     elif args.approach == 'ner':

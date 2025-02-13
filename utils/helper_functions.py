@@ -67,3 +67,19 @@ def evaluate_keybert_fuzzy(kw_model, docs, top_n=5, threshold=80):
     avg_r = sum(all_r) / len(all_r)
     avg_f1 = sum(all_f1) / len(all_f1)
     return avg_p, avg_r, avg_f1 
+
+def evaluate_predictions_domain_adaptation(predicted_keywords_list, test_dataset, threshold=50):
+    all_p, all_r, all_f1 = [], [], []
+
+    for pred_kws, doc in zip(predicted_keywords_list, test_dataset):
+        gold_kws = doc["keywords"]
+        p, r, f1 = precision_recall_f1_fuzzy(pred_kws, gold_kws, threshold)
+
+        all_p.append(p)
+        all_r.append(r)
+        all_f1.append(f1)
+
+    avg_p = sum(all_p) / len(all_p)
+    avg_r = sum(all_r) / len(all_r)
+    avg_f1 = sum(all_f1) / len(all_f1)
+    return avg_p, avg_r, avg_f1

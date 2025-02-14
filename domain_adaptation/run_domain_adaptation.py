@@ -35,21 +35,21 @@ def run_domain_adaptation():
   model.save_pretrained(output_directory)
   tokenizer.save_pretrained(output_directory)
 
-  # Carica il tuo BERT fine-tuned
+  # Upload il tuo BERT fine-tuned
   bert_model = AutoModel.from_pretrained(output_directory)
   tokenizer = AutoTokenizer.from_pretrained(output_directory)
 
-  # Creiamo un SentenceTransformer con il nostro modello BERT fine-tuned
+  # we create the SentenceTransformer with our model BERT fine-tuned
   word_embedding_model = models.Transformer(output_directory, max_seq_length=256)
   pooling_model = models.Pooling(word_embedding_model.get_word_embedding_dimension())
 
-  # Combiniamo i modelli per ottenere un SentenceTransformer
+  # we combine the models to obtain a SentenceTransformer
   fine_tuned_model = SentenceTransformer(modules=[word_embedding_model, pooling_model])
 
-  # Ora possiamo usarlo con KeyBERT
+  # now we can use with KeyBERT
   kw_model_finetuned = KeyBERT(model=fine_tuned_model)
 
-  kw_model_base = KeyBERT()  # KeyBERT con BERT-base
+  kw_model_base = KeyBERT()  # KeyBERT with BERT-base
 
   keywords_base = kw_model_base.extract_keywords(test_data, keyphrase_ngram_range=(1, 2), stop_words='english',top_n=5)
   keywords_finetuned = kw_model_finetuned.extract_keywords(test_data, keyphrase_ngram_range=(1, 2), stop_words='english',top_n=5)

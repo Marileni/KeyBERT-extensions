@@ -17,10 +17,9 @@ This repository focuses on **topic modeling** techniques that leverage BERT-base
 
 1. **Install Dependencies**  
    ```bash
-   pip install spacy nltk scikit-learn requests --quiet
-   pip install torch sentence-transformers keybert thefuzz --quiet
+   pip install spacy nltk scikit-learn requests
+   pip install torch sentence-transformers keybert thefuzz
    python -m spacy download el_core_news_sm
-   
 
 2.  **Running via `main.py`**
 

@@ -220,11 +220,6 @@ def preprocess_data(translated_data: list):
     print(f"Dev examples:   {len(dev_examples)}")
     print(f"Test examples:  {len(test_examples)}")
 
-    # [Optional] If you want to save them as JSON lines or CSV, do so here.
-    # Example:
-    # with open("train_examples.json", "w", encoding="utf-8") as f:
-    #     json.dump(train_examples, f, ensure_ascii=False, indent=2)
-
     # Return the examples for downstream usage (model training, etc.)
     return {
         "train": train_examples,

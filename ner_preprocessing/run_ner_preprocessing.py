@@ -1,4 +1,5 @@
-from .data_processing import preprocess_data, ner_filter, apply_kb, evaluate_results
+from .data_processing import preprocess_data, ner_filter, apply_kb
+from .utils import evaluate_results
 from keybert import KeyBERT
 import numpy as np
 

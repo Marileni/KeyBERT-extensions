@@ -1,4 +1,5 @@
 from thefuzz import fuzz
+import spacy
 
 def precision_recall_f1_fuzzy(predicted_keywords, gold_keywords, threshold=80):
     """
